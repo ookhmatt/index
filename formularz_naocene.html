@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="with=device-with, initial-scale=1.0"/>
+<head>
+<title> Lista Okhmat <title>
+</head>
+<body style="background-color:lightblue;"> 
+<fieldset>
+<legend style="color:green;"> <h2> ADRES</h2></legend>
+<p><input type="radio" name="form1" value="firmowy"/>firmowy
+	<input type="radio" name="form1" value="prywatny"/> prywatny
+<p> Imie i Nazwisko: <input type="text" name="imie_i_nazwisko" value="Poligraf" size="30"/></p>
+<p> ulica i numer budynku <input type="text" name="ulica_budynku"  size="30"/></p>
+<p> Kod pocztowy <input type="text" name="kodpocztowy" value="40-671" size="30"/></p>
+<p> Miejscowość <input type="text" name="" value="Katowice" size="30"/></p>
+<p> Telefon <input type="text" name="" value="Telefon" value="+48 601 601 601" size="30"/></p>
+<p> E-mail <input type="text" name="" value="poligraf@gmail.com" size="30"/></p>
+</fieldset>
+
+<fieldset>
+<legend style="color;green;"> <h2> WYSYŁKA</h2></legend>
+<p> Przesyłka (eko/prioryt/ekspr)
+<input list="blok" name=" przesylka"/>
+<datalist id="block"
+	<option value="Ekonomiczna"/>
+	<option value="Priorytetowa"/>
+	<option value="Ekspresowa"/>
+</datalist>
+</fieldset>
+<p> Waga (g): <input type="text" name="waga" value="1000" size="10"/></p>
+<p>
+<selet name="rozmiary" size="4"
+	<optgroup label="rozmiary">
+	<option value="S"/> S (28 x 8 x 64cm)
+	<option value="M"/> M (38 x 19 x 64cm)
+	<option value="L"/> L (41 x 38 x 64cm)
+	<option value="XL"/> XL (60 x 60 x 70cm)
+</optgroup>
+</select>
+</p>
+
+
+
+
+<p> Wartośc <input type="text" name="wartość" value="0,00 zł" size="10"/></p>
+<p> Nr rachunku <input type="text" name="rachunek" value="60 1050 1214 1000 0033 6688 5522>" size="30"/></p>
+<p> Data: <input type="data" name="data" value="1989-12-13 size="10"/></p>
+
+
+
+<button> WYŚLI </button>
+<button> ANULUJ </button>
+
+
+</body>
+</html>
