@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Selektory atrybutow</title>
+<style type="text/css">
+body {background-color: #c0c0c0;}
+p.raz[align] {color: red;  font-size:  16pt; }
+
+p.dwa[align="right"] {color: white;  font-size:  20pt; }
+
+.trzy[title~="opis"] { color:red; text-decoration: underline; border: 2px dotted red; background-color:white; font-size:30pt; }
+     body {background-color:lightblue; }
+h3{color:#e750d1;}
+</style>
+	<h3> 1 PROSTY SELEKTOR ATRYBUTU</h3>
+<p class="raz" align="center"> Wew. arkusze styl&#243;w. </p>
+<p class="raz" align="right"> Definiowanie styl&#243;w. </p>
+<p class="raz"> Arkusze styl&#243;w. </p>
+<hr / >
+
+<h3> 2 SELEKTOR ATRYBUTU O OKRESLONEJ WARTOSCI</h3>
+<p class="dwa" align="center"> Wew. arkusze styl&#243;w. </p>
+<p class="dwa" align="right"> Definiowanie styl&#243;w. </p>
+<p class="dwa"> Arkusze styl&#243;w. </p>
+<hr / >
+
+<h3>3 SELEKTOR ATRYBUTU ZAWIERAJACY OKRESLONY WYRAZ</h3>
+    <div class="trzy" title="element z opisem"> <br/>
+      Tekst w elemencie DIV nie jest koloru czerwonego, poniewaz wartosc atrybutu "title" w tym elemencie nie zawiera w sobie wyrazu "opis". 
+    </div><br/>
+
+    <p class="trzy" title="to-jest-opis">
+      Tekst w elemencie AKAPIT nie jest koloru czerwonego, poniewaz wartosc atrybutu "title" w tym elemencie nie zawiera w sobie wyrazu "opis".
+    </p><br/>
+
+    <h3 class="trzy" title="to jest opis">
+      Tekst w elemencie H3 jest koloru czerwonego <br />
+	  (podkreslony, ramka dotted, kolor tła biały, 30 pt),<br/>
+	  poniewaz wartosc atrybutu "title" w tym elemencie zawiera w sobie wyraz "opis"
+    </h3>
+
+</section>
+</main>
+
+
+
+</body></html>
